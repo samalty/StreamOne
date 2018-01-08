@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="reset2.css">
+		<style type="text/css">
+		body{
+			background-color: #F5D76E;
+		}
+
+		nav{
+			font-family: roboto;
+			margin: 30px auto;
+			width: 100%;
+			height: 150px;
+			display: flex;
+			flex-direction: row;
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0;	
+		}
+
+		#landing{
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			margin-right: 200px;
+			margin-left: 200px;
+		}
+
+		#landing-message{
+			font-family: dosis;
+			font-size: 3em;
+			text-align: center;
+		}
+
+		#landing-graphic{
+
+		}
+				
+		a{
+			text-decoration: none;
+			color: #FFF;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border-bottom:1px solid white;
+
+		}
+		#logoNav{
+			font-size: 2em;
+			font-weight: bold;
+			}
+
+		@media screen and (min-width: 700px){
+			nav{
+				align-items: baseline;
+		
+			}
+			a{
+				font-size: 2em;
+				border:none;
+			
+			}
+			#logoNav{
+				flex:3;
+				font-size: 3em;
+				font-weight: bold;
+				text-align: center;
+			}
+			#landing{
+				flex-direction: row;
+				margin: 100px auto;
+			}
+		}
+		
+		</style>
+</head>
+<body>
+
+	<nav>
+		
+			<a id="logoNav">CHOCOBLOCK</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+		
+	</nav>
+
+	<section id="landing">
+		<div id="landing-message">
+			<h2>Make Creative Clever Fun Apps. Simple.</h2>
+		</div>
+		<div id="landing-graphic">
+			<img src="https://raw.githubusercontent.com/samalty/Unit03-positioning_and_CSS/master/laptop.png" alt="laptop" width="500" height="400" />
+		</div>
+	</section>
+
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transition challenge</title>
+		<style>
+		div{
+			width: 200px;
+			height: 50px;
+			font-family: roboto;
+			font-size: large;
+			display: relative;
+			text-align: center;
+			border-color: black;
+			border: 2px solid black;
+			border-radius: 10px;
+			margin: 10px;
+		}
+		h1{
+			font-family: arial;
+			font-size: 20px;
+			text-align: center;
+		}
+		.box{
+			position: relative;
+			top: 20px;
+			left: 500px;
+		}
+		.box:hover{
+			background-color: red;
+			border-color: red;
+			border-radius: 0px;
+			transition-duration: 1s;
+		}
+		.translated{
+			position: relative;
+			top: 10px;
+			left: 500px;
+			transform: translate(-100px);
+		}
+		.translated:hover{
+			background-color: red;
+			border-color: red;
+			border-radius: 0px;
+			transform: translate(250px, 200px);
+			transition-duration: 3s;
+			transition-timing-function: ease-out;
+		}
+		.rotated{
+			position: relative;
+			top: 70px;
+			left: 500px;
+			transform: rotate(45deg);
+		}
+		.rotated:hover{
+			background-color: red;
+			border-color: red;
+			border-radius: 0px;
+			transform: rotate(-45deg);
+			transform: perspective(300px) rotateY(45deg);
+			transition-duration: 3s;
+		}
+		.scaled{
+			position: relative;
+			top: 100px;
+			left: 500px;
+			transform: scale(2, 2);
+		}
+		.scaled:hover{
+			background-color: red;
+			border-color: red;
+			border-radius: 0px;
+			transition-duration: 1s;
+		}
+		.skewed{
+			position: relative;
+			top: 150px;
+			left: 500px;
+			transform: skew(10deg, 20deg);
+		}
+		.skewed:hover{
+			background-color: red;
+			border-color: red;
+			border-radius: 0px;
+			transform: skew(20deg, 30deg);
+			transition-duration: 3s;
+			transition-timing-function: ease-in-out;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h1>Box</h1>
+		</div>
+		<div class="translated"> 
+			<h1>I am translated</h1>
+		</div>
+		<div class="rotated"> 
+			<h1>I am rotated</h1>
+		</div>
+		<div class="scaled"> 
+			<h1>I am scaled</h1>
+		</div>
+		<div class="skewed"> 
+			<h1>I am skewed</h1>
+		</div>
+	</body>
+</html>

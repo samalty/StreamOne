@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Fixed positioning header</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+            #container {
+                margin-right: auto; /*center container with margins left & right set to auto*/
+                margin-left: auto;
+                position: relative;
+                width: 960px; /*to center an element it must have a width*/
+                border-radius: 10px;
+                padding: 10px;
+                font-size: 0; /* for inline-block spacing issues*/
+            }
+            body {
+                background-image: url(https://populous.com/wp-content/uploads/2012/02/Emirates_bowl_credit-Hufton+Crow-990x465.jpg);
+                background-size: contain;
+            }
+            .box {
+                position: relative; /*Must be relative*/
+                width: 100%;
+                background-color: #81BBC9;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                font-family: Roboto;
+                font-size: 20px;
+                text-align: center;
+                padding: 30px 0;
+            }
+            
+            .sidebar {
+                /*add vendor prefixes for border-box*/
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                display: inline-block;
+                width: 470px;
+                margin-right: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+            .content {
+                /*add vendor prefixes for border-box*/
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                display: inline-block;
+                width: 470px;
+                margin-left: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+               #toTopLeft {
+                position: absolute; /* Absolute Link */
+                bottom: 0; /* Offset however we wish*/
+                left: -80px;
+            }
+            #toTopRight {
+                position: absolute;
+                bottom: 0;
+                right: -80px;
+            }
+            
+            p {
+                padding-bottom: 50px;
+            }
+            .img1{
+                -webkit-filter: sepia(0.8);
+            }
+            .img2{
+                -webkit-filter: saturate(0.9) blur(3px) opacity(0.7);
+            }
+            .img3{
+                -webkit-filter: contrast(1);
+            }
+            .img4{
+                -webkit-filter: grayscale(0.7);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header" class="box">
+                <h1>Header</h1>
+            </div>
+
+            <div class="box sidebar">
+                <h2>Sepia</h2>
+                <img class="img1" src="https://paininthearsenal.com/wp-content/uploads/getty-images/2017/07/814860028-western-sydney-v-arsenal.jpg.jpg" width="400" height="350" alt="Laca">
+            </div>
+
+            <div class="box content">
+                <h2>Saturate, blur and opacity</h2>
+                <img class="img2" src="https://paininthearsenal.com/wp-content/uploads/getty-images/2017/07/814860028-western-sydney-v-arsenal.jpg.jpg" width="400" height="350" alt="Laca">
+            </div>
+
+            <div class="box sidebar">
+                <h2>Contrast</h2>
+                <img class="img3" src="https://paininthearsenal.com/wp-content/uploads/getty-images/2017/07/814860028-western-sydney-v-arsenal.jpg.jpg" width="400" height="350" alt="Laca">
+                <a href="#"><img id="toTopLeft" src="https://raw.githubusercontent.com/samalty/Unit03-positioning_and_CSS/master/arrow.png" alt="Link to top"></a>
+            </div>
+
+            <div class="box content">
+                <h2>Grayscale</h2>
+                <img class="img4" src="https://paininthearsenal.com/wp-content/uploads/getty-images/2017/07/814860028-western-sydney-v-arsenal.jpg.jpg" width="400" height="350" alt="Laca">
+                <a href="#"><img id="toTopRight" src="https://raw.githubusercontent.com/samalty/Unit03-positioning_and_CSS/master/arrow.png" alt="Link to top"></a>
+            </div>
+
+            <div id="footer" class="box">
+                <h2>Footer</h2>
+            </div>
+        </div>
+    </body>
+</html>

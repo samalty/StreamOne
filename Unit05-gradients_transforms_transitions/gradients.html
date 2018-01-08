@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gradients challenge</title>
+		<style>
+		div{
+			width: 400px;
+			height: 250px;
+			font-family: arial;
+			font-size: larger;
+			display: inline-block;
+			text-align: center;
+			border-color: black;
+			border: 10px;
+			border-radius: 30px;
+			box-shadow: 5px 10px inset;
+		}
+		h1{
+			font-family: arial;
+			font-size: 50px;
+			text-align: center;
+		}
+		#box1{
+			background: linear-gradient(to right, #FFED21 1%, ##FF2A06 50%, #9412FF 100%);
+		}
+		#box2{
+			background: linear-gradient(-45deg, rgba(200,0,0,0.2), red);
+		}
+		#box3{
+			background: radial-gradient(#5F2C82 40%, #3498DB 70%);
+		}
+		</style>
+	</head>
+	<body>
+		<div id="box1">
+			<h1>A box with gradient</h1>
+		</div>
+		<div id="box2">
+			<h1>A box with gradient</h1>
+		</div>
+		<div id="box3">
+			<h1>A box with gradient</h1>
+		</div>
+	</body>
+</html>
